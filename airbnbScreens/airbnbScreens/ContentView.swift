@@ -8,11 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
+    init(){
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().barTintColor = UIColor(.red)
+    }
+
     var body: some View {
-        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-            Text("Tab Content 1").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 1")/*@END_MENU_TOKEN@*/ }.tag(1)
-            Text("Tab Content 2").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 2")/*@END_MENU_TOKEN@*/ }.tag(2)
-        }
+        TabView {
+            TripsView_()
+                .tabItem {
+                    Label("Explore", systemImage: "magnifyingglass")
+                }
+            SampleView()
+                .tabItem {
+                    Label("Wishlists", systemImage: "suit.heart").environment(\.symbolVariants, .none)
+                }
+            SampleView()
+                .tabItem {
+                    
+                    Text("Trips")
+                    Image("airbnbIcon")
+                }
+            SampleView()
+                .tabItem {
+                    Label("Inbox", systemImage: "bubble.middle.bottom")
+                        .environment(\.symbolVariants, .none)
+                }
+            SampleView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                        .environment(\.symbolVariants, .none)
+                }
+
+
+           
+        }.accentColor(.red) //tabview end
+        
+        
+        
+        
+    }
+}
+
+
+struct SampleView: View {
+    var body: some View {
+        Text("Sample View")
+            .font(.title)
     }
 }
 
