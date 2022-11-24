@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "vineyard 2.svg",
+      "filename" : "world.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "vineyard 1.svg",
+      "filename" : "world 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "vineyard.svg",
+      "filename" : "world 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
