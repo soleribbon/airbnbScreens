@@ -12,7 +12,7 @@ import MapKit
 struct TripsView_: View {
     @State private var showingListings = false
     @State private var mapAppear = false
-    @State private var sheetHeight = 550
+    @State private var sheetHeight = 570
     @State var searchClicked = false
     @State var shouldHideMapButton = false
 
@@ -20,7 +20,7 @@ struct TripsView_: View {
 
    
     
-    @State private var selectedDetent: PresentationDetent = .height(550)
+    @State private var selectedDetent: PresentationDetent = .height(570)
     
     
     //for map
@@ -263,7 +263,7 @@ struct TripsView_: View {
                         
                 }
                 
-                .presentationDetents([.height(50), .height(550)], selection: $selectedDetent)            }
+                .presentationDetents([.height(50), .height(570)], selection: $selectedDetent)            }
 
                 .fullScreenCover(isPresented: $searchClicked) {
                     SearchView()
