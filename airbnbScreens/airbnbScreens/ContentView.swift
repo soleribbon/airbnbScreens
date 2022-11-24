@@ -42,7 +42,9 @@ struct ContentView: View {
 
 
            
-        }.accentColor(.red) //tabview end
+        }
+        .accentColor(.red) //tabview end
+        
         
         
         
